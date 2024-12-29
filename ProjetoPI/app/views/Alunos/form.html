@@ -1,0 +1,47 @@
+#{extends 'main.html' /}
+
+
+<div class="container-fluid  col-7 text-center" style="margin-top: 100px;">
+<h3><p>Pedidos de Fardamento - Técnico Integrado</p></h3>
+<p>Peça já o seu fardamento! - IFJC</p>
+
+<form class="text-start mt-4"  action="@{Alunos.salvar}">
+
+	<input type="hidden" name="aluno.id" value="${a?.id}" />
+	<div class="mb-3">
+		<label class="form-label">Nome:</label>
+		<input type="text" class="form-control" name="aluno.nome" value="${a?.nome}"placeholder="Insira aqui seu nome"  required/>
+	</div>
+
+	<div class="mb-3">
+		<label class="form-label">Matrícula:</label>
+		<input type="text" class="form-control" name="aluno.matricula" value="${a?.matricula}" placeholder="Insira aqui a matrícula" required/>
+	</div>
+	
+	<div class="mb-3">
+		<label class="form-label">Turma:</label>
+		<input type="text" class="form-control" name="aluno.turma" value="${a?.turma}" placeholder="Insira aqui sua turma " required/>
+	</div>
+	<div class="mb-3">
+		<label class="form-label">Curso:</label>
+		<input type="text" class="form-control" name="aluno.curso" value="${a?.curso}" placeholder="Insira aqui a curso" required/>
+	</div>
+	
+	<div class="mb-3">
+		<label class="form-label">Tamanho:</label>
+		    <select id="tamanhoID" name="aluno.tamanho"">
+
+            <option value="p" name="aluno.tamanho">P</option>
+            <option value="m" name="aluno.tamanho">M</option>
+            <option value="g" name="aluno.tamanho">G</option>
+            <option value="gg" name="aluno.tamanho">GG</option>
+        </select>
+	</div>
+	<h6><p>Valor do Fardamento: 35,00R$</p></h6>
+	<div class="mb-3">
+		<input type="submit" class="btn btn-outline-success" />
+	</div>
+
+</form>
+
+
