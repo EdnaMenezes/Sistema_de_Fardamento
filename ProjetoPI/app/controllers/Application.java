@@ -1,15 +1,23 @@
 package controllers;
 
-//import play.*;
+import play.*;
 import play.mvc.*;
 
 import java.util.*;
 
-//import models.*;
+import models.*;
 
 public class Application extends Controller {
 
     public static void index() {
+        render();
+    }
+
+    public static void contato() {
+        render();
+    }
+
+    public static void sobrenos() {
         render();
     }
 
