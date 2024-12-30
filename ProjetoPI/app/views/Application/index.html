@@ -1,4 +1,67 @@
-#{extends 'main.html' /}
-#{set title:'Home' /}
+#{extends 'main.html' /} 
+#{set title:'Sistema de Fardamento EJ' /}
 
-#{welcome /}
+<nav
+	class="navbar navbar-expand-lg bg-body-tertiary mt-3 ">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="@{application.index}">Inicio</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item"><a class="nav-link" href="@{application.sobrenos}">Sobre
+						nós</a></li>
+				<li class="nav-item"><a class="nav-link" href="@{application.contato}">Contato</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="@{login.form}">Login</a>
+				</li>
+				<li class="nav-item dropdown">
+
+				<li class="nav-item">
+					<a class="nav-link" href="@{Usuarios.form}">Criar conta</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<br/>
+<center>
+<h1 class="cor">Bem vindo!</h1>
+<h5 class="cor">Faça o pedido da sua camisa do Instituto Federal!</h5>
+</center>
+<div class="caro"> <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"> <div class="carousel-inner"> <div class="carousel-item active"> <img src="/public/images/camisaIFRN.jpg" class="d-block w-50 mx-auto" alt="..."> </div> <div class="carousel-item"> <img src="/public/images/fotocamisa.png" class="d-block w-50 mx-auto" alt="..."> </div> <div class="carousel-item"> <img src="/public/images/rlcamisa.jpg" class="d-block w-50 mx-auto" alt="..."> </div> </div> <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button> <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button> </div> </div>
+
+<div id="carouselExampleIndicators" class="carousel slide">
+	<div class="carousel-indicators">
+	  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	</div>
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+		<img src="/public/images/propaganda1.jpeg" class="d-block w-100" alt="...">
+	  </div>
+	  <div class="carousel-item">
+		<img src="/public/images/propaganda2.jpeg" class="d-block w-100" alt="...">
+	  </div>
+	  <div class="carousel-item">
+		<img src="/public/images/propaganda3.jpeg" class="d-block w-100" alt="...">
+	  </div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="visually-hidden">Next</span>
+	</button>
+  </div>
+</div>
+</div>
